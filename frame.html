@@ -16,9 +16,14 @@
             border-radius: 10px;
             position: relative;
             margin: 5px;
+            overflow: hidden;
         }
         .photo-frame .photo img{
             width: 300px;
+        }
+        .photo-frame:hover .photo img{
+            transform: scale(1.2);
+            transition: transform 1s;
         }
         .photo-detail{
             position: absolute;
