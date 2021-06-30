@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css-grid.css">
+    <title>CSS-Ggid</title>
+    <style>
+        .container{
+            display: grid;
+            /* j koyta column banaite chao sei koyta entity dite hobe */
+            /* grid-template-columns: 100px auto 100px; */
+
+            /* fraction a likhle 100% responsive hoy */
+            /* grid-template-columns: 1fr 2fr; */
+
+            /* j koyta row banaite chao sei koyta entity dite hobe */
+            /* grid-template-rows: 300px 300px; */
+
+            /* fraction a likhle 100% responsive hoy */
+            /* grid-template-rows: 2fr 3fr; */
+
+            /* grid-template-columns rows alada kore na likhe ekbare
+            grid-template likha jay.. tobe prothom entity gula rows
+            er jonno and porer entity gula column er jonno... 
+            example: grid-template: row fraction / column fraction; */
+            /* grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr; */
+
+            /* akhon amader column jodi onek gula hoy tokhon ki amra barbar
+            ekta ekta kore entityr maddhome column likhte thakbo? na, karon
+            er jonno repeat() function use korbo... jar 1st parameter hobe
+            column number and 2nd parameter hobe kotokhani jayga dokhol korbe
+            example: grid-template: repeat(col num, fraction); */
+            
+            /* grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr); */
+
+            /* ekbare likha jay eivabe */
+            grid-template: repeat(3,1fr)/repeat(3,1fr);
+
+            /* sudhu row gular moddhe gap */
+            /* grid-row-gap: 15px; */
+
+            /* sudhu column gular moddhe gap */
+            /* grid-column-gap: 15px; */
+
+            /* duitatei soman gap dite chaile */
+            grid-gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>a</div>
+        <div>b</div>
+        <div>c</div>
+        <div>d</div>
+        <div>e</div>
+        <div>f</div>
+    </div>
+</body>
+</html>
