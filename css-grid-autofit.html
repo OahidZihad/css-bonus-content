@@ -10,8 +10,14 @@
         .container{
             height: 100%;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-            grid-template-rows: repeat(auto, 1fr);
+            grid-template-columns: repeat(5, 90px);
+            grid-template-rows: repeat(2, 90px);
+            grid-gap: 5px;
+            /* pasapasi alignment */
+            justify-content:center; 
+
+            /* upre niche alignment  */
+            align-content: center;
             /* grid-auto-rows: 1fr; */
         }
     </style>
